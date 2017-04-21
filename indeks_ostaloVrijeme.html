@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Istra+1</title>
+</head>
+<body>
+<header> <h1>Anketna applikacija</h1></header>
+<article> Ova stranica napravljena je sa ciljem i željom da se ostvari projekt u kojem ce se izrađivati ankete u svrhu ispitivanja znanja ili nazocnosti studenata ili ucenika na nastavi<br/>
+
+    <a href="http://tinypic.com?ref=1si73s" target="_blank"><img src="http://i63.tinypic.com/1si73s.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
+    <br/>Za razvoj zaslužan <strong>Istra+1</strong> i njegovi vrijedni članovi:<em>Daniel Marinković; Nikola Cepanec; Nikola Paulišić i Vanda Antolović </em>i ostali
+    <br/><a href="http://tinypic.com?ref=do1ggi" target="_blank"><img src="http://i64.tinypic.com/do1ggi.png" border="0" alt="Image and video hosting by TinyPic"></a>
+    <button onclick="vrijeme()"> Mogu li otići s vježbi?</button>
+    <span id="odgovor"> </span>
+</article><br>
+<footer style="position: fixed; bottom: 35px; right: 30%; background: grey; opacity: 0.8"> Ova stranica prikuplja kolačiće radi poboljšanja iskustva korištenja
+    <button type="button" onclick="sakrij()">Ok</button>
+</footer>
+<script>
+    function sakrij(){ var x = document.getElementsByTagName("footer");
+        x[0].innerHTML = ' ';}
+    function vrijeme(){
+        var d = new Date();
+        if(d.getHours()<13)
+            alert('Da! Viježbe još nisu počele');
+        else if(d.getHours()>15)
+            alert('Da! Viježbe su završile');
+        else
+        {
+            document.getElementById("odgovor").innerHTML = "Ostalo vam je još " + (15- d.getHours())
+                + " sati i " + (59-d.getMinutes()) + " minuta.";
+            alert('Ne!');
+        }
+    }
+</script>
+</body>
+</html>
