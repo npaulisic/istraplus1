@@ -1,0 +1,39 @@
+body{
+	background:#ececec;
+	font-size:87.5%;
+	font-family: 'Open Sans', sans-serif;
+	color:#293d3d;
+	line-height:1.7em;
+	text-align:left;
+}
+
+h1{
+	color:#770000;
+}
+a{
+	text-decoration:none;
+	color:#770000;
+}
+
+a:hover{
+	color:#666666;
+}
+
+#poc{
+	text-align:center;
+}
+
+#pocetno{
+	width:50%;
+}
+div{
+	width:50%;
+	float:left;
+	
+}
+p{
+	padding:2px;
+}
+img{
+	width:40%;
+}
