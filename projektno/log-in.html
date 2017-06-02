@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="UTF-8"> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Log-in</title>
+	</head>
+	<body>
+		<header>
+			<br/>
+			<h1>Log-in</h1>
+			<br/>
+			<hr/>
+		</header>
+		<main>
+			
+			<form name="bogmipomogao">
+				<br/>
+				<input type="radio" name="izbor" id="prof">Profesor<br/>
+				<input type="radio" name="izbor" id="stud">Student<br/>	<br/>
+				<hr/>
+				<br/>
+				<input type="text" name="korisnik" id="korisnik" placeholder="Korisničko ime"><label>* @</label>
+				<input type="text" name="Domena" id="domena" placeholder="Domena"><br/><br/>
+				<input type="password" name="lozinka" id="lozinka" placeholder="Lozinka">
+				<input type="Submit" value="Log-in" id="gumb">
+				
+			</form> 
+			<script type="text/javascript">
+			document.getElementById("gumb").onclick = function (event) {
+			var slanje_forme=true;
+			var stud=document.getElementById("stud");
+			var prof=document.getElementById("prof");
+			var Kor = document.getElementById("korisnik").value;
+			var dom=document.getElementById("domena").value;
+			var loz=document.getElementById("lozinka").value;
+			
+				if ((stud.checked!=true)&&(prof.checked!=true)){
+				slanje_forme=false;
+				alert("Mora se odabrati jedna opcija");
+				}
+				
+				if(stud.checked!=true)
+					bogmipomogao.action="prof1.html"
+					else bogmipomogao.action="stud1.html"
+			
+				if ((Kor.length==0)&&(stud.checked!=true)){
+				slanje_forme=false;
+				alert("Korisnik mora biti unesen");
+				}
+				
+				if (dom.length==0 && ((prof.checked==true)||(stud.checked==true))){
+				slanje_forme=false;
+				alert("Domena se mora napisati!!");}
+				
+				if (Kor.length>0 && loz.length==0){
+				slanje_forme=false;
+				alert("Lozinka se mora unijeti... ajmo se praviti da imamo bazu za ovo i reci Lozinka ne odgovara Korisničkom imenu");
+				}
+			
+		if (slanje_forme!=true) event.preventDefault();
+}
+		</script>
+		</main>
+		
+	</body>
+</html>	
