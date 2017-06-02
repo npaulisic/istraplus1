@@ -4,7 +4,6 @@
 body{
 	width:100%;
 	max-width:756px;
-	font-size:20px;
 }
 
 .header{
@@ -13,59 +12,24 @@ body{
 	background-color:#e6e6ff;
 	text-transform:uppercase;
 }
-
-table{width:100%;
-text-align:center;
-font-size:20px;}
-
-a{display:block;
+table{
+	width:100%;
+	text-align:center;
+	font-size:20px;
+}
+a{
+	display:block;
 	color:black;
-	text-decoration:none;}
+	text-decoration:none;
+	}
 	
-.predmeti :hover{background-color:#ccffeb;}
-.predmeti :active{background-color:#ffe6e6;}
+.predmeti :hover{
+	background-color:#ccffeb;
+	}
+.predmeti :active{
+	background-color:#ffe6e6;
+	}
 
-form{
-	margin: 50px 0;
+.mainnav{
+	margin-top:50px;
 }
-
-.Ime{
-	margin:0px 0px 25px 15px;
-	font-size:25px;
-	font-weight:bold;
-}
-#imeAnkete{
-	width:70%;
-}
-
-label#pitanje{
-	margin-left:15px;
-}
-#pitanje{
-	width:81.5%;
-	margin:0px 0px 25px 15px;
-}
-
-#tipO{
-	margin-left:50px;
-}
-#tipO label{
-	margin-right:30px;
-}
-#tip{
-	width:20%;
-	font-size:15px;
-}
-
-#DodajPitanje{
-	width:95%;
-	margin-bottom:10px;
-}
-
-button{
-	padding: 10px;
-	width:30%;
-	margin-right: 15px;
-	
-}
-
