@@ -6,17 +6,21 @@
 		<title>Profesor - izrada ankete</title>
 	</head>
 	<body>
-		<div><a href="prof2.html">Odustani</a></div>
+		<button type="button" id="Odustani"><a href="prof2.html">Odustani</a></button>
 		<form>
-			<label>Ime ankete: </label><input type="text" name="ImeAnkete" id="imeAnkete"><br/>
+			<div class="Ime">
+				<label>Ime ankete: </label><input type="text" name="ImeAnkete" id="imeAnkete"><br/>
+			</div>
 			
-			<label>1. </label><input type="text" name="Pitanje" id="pitanje" placeholder="Pitanje"><br/>
-			<label>Tip odgovora: </label> 
-			<select name="Tip" id="tip">
-				<option value="radio">Radio</option>
-				<option value="checkbox">Checkbox</option>
-				<option value="textbox">Textarea</option>
-			</select>
+			<label id="pitanje">1. </label><input type="text" name="Pitanje" id="pitanje" placeholder="Pitanje"><br/>
+			<div id="tipO">
+				<label>Tip odgovora: </label> 
+				<select name="Tip" id="tip">
+					<option value="radio">Radio</option>
+					<option value="checkbox">Checkbox</option>
+					<option value="textbox">Textarea</option>
+				</select>
+			</div>
 			
 			<!-- Radio-->
 				<!--<input type="radio" name="odgA" id="odga"><input type="text" name="tekstOdgA" id="tekstOdga" placeholder="Odgovor">-->
@@ -27,10 +31,10 @@
 		</form>
 		
 		<article>
-			<div id="DodajPitanje">Dodaj pitanje</div>
-			<div>Save</div>
-			<div>Generiraj URL</div>
-			<div><a href="prof4.html">Upload</a></div>
+			<button type="button" id="DodajPitanje">Dodaj pitanje</button>
+			<button type="button" id="Save">Save</button>
+			<button type="button" id="GenerirajURL">Generiraj URL</button>
+			<button type="button" id="Upload"><a href="prof4.html">Upload</a></button>
 		</article>
 	
 	</body>
