@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="UTF-8"> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Profesor - uredjivanje ankete</title>
+	</head>
+	<body>
+		<main>
+		<h1>Anketa: *ime ankete*</h1>
+		<form>
+		
+			<article>
+			<p>1. Tekst prvog pitanja goes here</p>
+			<input type="radio"> Pizza </input>
+			<br/>
+			<input type="radio"> Pizza </input>
+			</article>
+			<hr/>
+			
+			<article>
+				<p>2. Tekst drugog pitanja goes here</p>
+				<input type="checkbox" checked> Check me out </input>
+					<br/>
+				<input type="checkbox"> Check me out </input>
+					<br/>
+				<input type="checkbox"> Check me out </input>
+					<br/>
+				<input type="checkbox"> Don't check me out </input>
+			</article>
+			<hr/>
+			<article>
+				<p>3. Tekst trećeg pitanja goes here</p>
+				<textarea rows="7" cols="30"></textarea>
+			</article>
+			<hr/>
+			
+			<article>
+			<label>4. </label><input type="text" name="Pitanje" id="pitanje" placeholder="Pitanje"><br/>
+			<label>Tip odgovora: </label> 
+			<select name="Tip" id="tip">
+				<option value="radio">Radio</option>
+				<option value="checkbox">Checkbox</option>
+				<option value="textbox">Textarea</option>
+			</select>
+			
+			<!-- Radio-->
+				<!--<input type="radio" name="odgA" id="odga"><input type="text" name="tekstOdgA" id="tekstOdga" placeholder="Odgovor">-->
+			<!-- Checkbox-->
+				<!--<input type="checkbox" name="odgB" id="odgb"><input type="text" name="tekstOdgB" id="tekstOdgb" placeholder="Odgovor">-->
+			<!--Textarea-->
+				<!--<textarea rows="7" cols="30"></textarea>-->	
+			</article>
+			<hr/>
+			<article>
+				<div id="DodajPitanje"><a href="#">Dodaj pitanje</a></div>
+				<div><a href="#">Save</a></div>
+				<div><a href="#">Generiraj URL</a></div>
+				<div><a href="prof4.html">Upload</a></div>
+		</article>
+		<hr/>
+		</form>
+		</main>
+		<a href="prof4.html">Odi nazad</a>
+	</body>
+	
+</html>
