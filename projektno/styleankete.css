@@ -1,0 +1,69 @@
+*{
+	margin: 0 auto;
+}
+body{
+	width:100%;
+	max-width:756px;
+	font-size:20px;
+}
+
+
+ .clear{
+	 clear: both; 
+}
+
+elementi {
+    float: right;
+    margin: 100px 0px 10px 10px;
+	min-width:200px;
+	
+}
+
+.prvi{
+	color:#4da6ff;
+	padding: 5px 5px 5px 5px;
+	background-color:#808080;
+
+}
+
+.drugi{
+	padding: 5px 5px 5px 5px;
+	background-color:#4da6ff;
+}
+
+.ne{
+	padding: 5px 5px 5px 5px;
+	background-color:#808080;
+}
+
+.da{
+	padding: 5px 5px 5px 5px;
+	background-color:#FF0000;
+}
+
+.mise{
+	padding: 5px 5px 5px 5px;
+	background-color:#b300ff;
+}
+
+img{
+	float:left;
+}
+
+
+.sudionici{
+	float:right;
+}
+
+#tipO{
+	float:right;
+}
+
+#povratak{
+	margin:40px 0px;
+	padding: 10px;
+	width:30%;
+	margin-right: 15px;
+	margin-top:15px;
+	text-decoration:none;
+}
