@@ -7,59 +7,52 @@
 	</head>
 	<body>
 		<main>
-		<h1>Anketa: *ime ankete*</h1>
-		<form>
-		
-			<article>
-			<p>1. Tekst prvog pitanja goes here</p>
-			<input type="radio"> Pizza </input>
-			<br/>
-			<input type="radio"> Pizza </input>
-			</article>
-			<hr/>
+			<h1>Anketa: *ime ankete*</h1>
+			<form class="uredAnkete">
 			
-			<article>
-				<p>2. Tekst drugog pitanja goes here</p>
-				<input type="checkbox" checked> Check me out </input>
+				<article>
+					<p>1. Tekst prvog pitanja goes here</p>
+					<label><input type="radio" name="odg1"> Pizza </label>
 					<br/>
-				<input type="checkbox"> Check me out </input>
+					<label><input type="radio" name="odg1"> Pizza </label>
 					<br/>
-				<input type="checkbox"> Check me out </input>
+					<label><input type="radio" name="odg1"> Pizza </label>
 					<br/>
-				<input type="checkbox"> Don't check me out </input>
-			</article>
-			<hr/>
-			<article>
-				<p>3. Tekst trećeg pitanja goes here</p>
-				<textarea rows="7" cols="30"></textarea>
-			</article>
-			<hr/>
-			
-			<article>
-			<label>4. </label><input type="text" name="Pitanje" id="pitanje" placeholder="Pitanje"><br/>
-			<label>Tip odgovora: </label> 
-			<select name="Tip" id="tip">
-				<option value="radio">Radio</option>
-				<option value="checkbox">Checkbox</option>
-				<option value="textbox">Textarea</option>
-			</select>
-			
-			<!-- Radio-->
-				<!--<input type="radio" name="odgA" id="odga"><input type="text" name="tekstOdgA" id="tekstOdga" placeholder="Odgovor">-->
-			<!-- Checkbox-->
-				<!--<input type="checkbox" name="odgB" id="odgb"><input type="text" name="tekstOdgB" id="tekstOdgb" placeholder="Odgovor">-->
-			<!--Textarea-->
-				<!--<textarea rows="7" cols="30"></textarea>-->	
-			</article>
-			<hr/>
-			<article>
-				<div><a href="stud2.html">Pošalji</a></div>
-				<div><a href="stud1.html">Upload</a></div>
-			</article>
-		<hr/>
-		</form>
+					<label><input type="radio" name="odg1"> Pizza </label>
+				</article>
+				<hr/>
+				
+				<article>
+					<p>2. Tekst drugog pitanja goes here</p>
+					<label><input type="checkbox" value="op1" checked> Check me out</label>
+					<br/>
+					<label><input type="checkbox" value="op2" > Check me out</label>
+					<br/>
+					<label><input type="checkbox" value="op3"> Check me out</label>
+					<br/>
+					<label><input type="checkbox" value="op4" > Don't check me out </label>
+				</article>
+				<hr/>
+				
+				<article>
+					<p>3. Tekst trećeg pitanja goes here</p>
+					<textarea rows="7" cols="30"></textarea>
+				</article>
+				<hr/>
+				
+				<article>
+					<button type="Submit" id="Posalji"><a href="stud2.html">Pošalji</a></button>
+					<button type="button" id="Upload"><a href="stud1.html">Upload</a></button>
+				</article>
+				
+				<div class="ocjena">
+					<label>How you like it:</label><br/><input type="range" name="points" id="bodovi" min="0" max="5">
+				</div>
+			</form>
 		</main>
-		<a href="stud2.html">Odi nazad</a>
+		
+		<button type="button" id="povratak"><a href="stud2.html">Povratak</a></button>
+
 	</body>
 	
 </html>
