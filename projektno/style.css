@@ -4,37 +4,52 @@
 body{
 	width:100%;
 	max-width:756px;
-}
-
-.header{
-	font-size:40px;
-	font-weight:bold;
-	background-color:#e6e6ff;
-	text-transform:uppercase;
-}
-table{
-	width:100%;
-	text-align:center;
 	font-size:20px;
 }
 a{
 	display:block;
 	color:black;
 	text-decoration:none;
-	}
+}
+
+/*---Prof1 - popis kolegija---*/
+
+.PopisKol{
+	margin: 25px 0px;
+}
+
+table{
+	width:100%;
+	text-align:center;
+	font-size:20px;
+}
+
+th{
+	font-size:34px;
+	font-weight:bold;
+	background-color:#e6e6ff;
+	text-transform:uppercase;
+	padding:12px;
+}
 	
-.predmeti :hover{
-	background-color:#ccffeb;
-	}
-.predmeti :active{
+.predmeti:hover{
+	background-color:#e6e6ff;
+}
+.predmeti:active{
 	background-color:#ffe6e6;
-	}
+}
+
+/*---Prof2 - menu---*/
+
+.predmeti a{
+	padding: 20px 0px;
+}
 
 .mainnav{
 	margin-top:50px;
 }
 
-/*Prof3 - izrada ankete*/
+/*---Prof3 - izrada ankete---*/
 
 .Ime{
 	margin:0px 0px 25px 15px;
@@ -45,7 +60,7 @@ a{
 	width:70%;
 }
 
-label#pitanje{
+#pitanjce{
 	margin-left:15px;
 }
 #pitanje{
@@ -73,5 +88,48 @@ button{
 	padding: 10px;
 	width:30%;
 	margin-right: 15px;
-	
+	margin-top:15px;
 }
+
+.ocjenjivanje{
+	margin-bottom: 10px;
+}
+.ocjenjivanje label{
+	padding: 5px;
+}
+
+/*---Prof5 uredjivanje ankete---*/
+
+.uredAnkete article{
+	padding: 20px 0px 20px 15px;
+}
+
+.uredAnkete p{
+	padding: 0px 0px 20px;
+}
+
+.uredAnkete textarea{
+	width: 88%;
+}
+
+#povratak{
+	margin:40px 0px;
+}
+
+/*---Stud3 - anketa---*/
+
+.ocjena{
+	margin-top: 15px;
+	padding: 5px;
+}
+.ocjena label {
+	padding-left:10px;
+	font-size:25px;
+	font-weight:bold;	
+}
+#bodovi{
+	margin:15px 15px;
+}
+
+
+
