@@ -33,3 +33,45 @@ a{
 .mainnav{
 	margin-top:50px;
 }
+
+/*Prof3 - izrada ankete*/
+
+.Ime{
+	margin:0px 0px 25px 15px;
+	font-size:25px;
+	font-weight:bold;
+}
+#imeAnkete{
+	width:70%;
+}
+
+label#pitanje{
+	margin-left:15px;
+}
+#pitanje{
+	width:81.5%;
+	margin:0px 0px 25px 15px;
+}
+
+#tipO{
+	margin-left:50px;
+}
+#tipO label{
+	margin-right:30px;
+}
+#tip{
+	width:20%;
+	font-size:15px;
+}
+
+#DodajPitanje{
+	width:95%;
+	margin-bottom:10px;
+}
+
+button{
+	padding: 10px;
+	width:30%;
+	margin-right: 15px;
+	
+}
