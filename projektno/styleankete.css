@@ -6,6 +6,11 @@ body{
 	max-width:756px;
 	font-size:20px;
 }
+a{
+	display:block;
+	color:black;
+	text-decoration:none;
+}
 
 
  .clear{
