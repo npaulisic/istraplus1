@@ -41,11 +41,38 @@
 		</article>
 		
 		<article>
-			<button type="button" id="DodajPitanje">Dodaj pitanje</button>
-			<button type="button" id="Save">Save</button>
-			<button type="button" id="GenerirajURL">Generiraj URL</button>
-			<button type="button" id="Upload"><a href="prof4.html">Upload</a></button>
+			<button type="button" id="DodajPitanje" onclick="dodaj()">Dodaj pitanje</button>
+			<button type="button"id="Save" onclick="save()">Save</button>
+			<button type="button"id="GenerirajURL" onclick="url()">Generiraj URL</button>
+			<button type="button"id="Upload" onclick="upload()"><a href="prof4.html">Upload</a></button>
+			
+			<script type="text/javascript">
+			function dodaj(){
+				var pitanje=document.getElementById("Pitanje");
+				var add="Dodano je pitanje: "
+				var tekstic=add.concat(pitanje);
+				window.alert(tekstic);
+			
+			}
+			function save(){
+				window.alert("Spremi");
+			
+			}
+			function url(){
+			var text = "";
+			var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+			var finale="";
+			var url="www.url.hr/"
+			for( var i=0; i < 7; i++ ){
+			text += possible.charAt(Math.floor(Math.random() * possible.length));}
+			finale=url.concat(text);
+			window.alert(finale);
+			}
+			
+			function upload(){
+			window.alert("Uspješno uploadano")}
+		</script>
 		</article>
-	
+		
 	</body>
 </html>
